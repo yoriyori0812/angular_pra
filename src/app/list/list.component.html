@@ -1,0 +1,20 @@
+<table mat-table [dataSource]="mountains">
+    <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let mountain">{{ mountain.number }}</td>
+    </ng-container>
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>山名</th>
+        <td mat-cell *matCellDef="let mountain">{{ mountain.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="height">
+        <th mat-header-cell *matHeaderCellDef>標高</th>
+        <td mat-cell *matCellDef="let mountain">{{ mountain.height }}</td>
+    </ng-container>
+    <ng-container matColumnDef="note">
+        <th mat-header-cell *matHeaderCellDef>メモ</th>
+        <td mat-cell *matCellDef="let mountain">{{ mountain.note }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,68 @@
+[
+  {
+    "number": 1,
+    "name": "angular mountain1",
+    "height": 9999,
+    "note": "easy!"
+  },
+  {
+    "number": 2,
+    "name": "angular mountain2",
+    "height": 8888,
+    "note": "hard!"
+  },
+  {
+    "number": 3,
+    "name": "angular mountain3",
+    "height": 7777,
+    "note": "easy!"
+  },
+  {
+    "number": 4,
+    "name": "angular mountain4",
+    "height": 6666,
+    "note": "hard!"
+  },
+  {
+    "number": 5,
+    "name": "angular mountain5",
+    "height": 5555,
+    "note": "very easy!"
+  },
+  {
+    "number": 6,
+    "name": "angular mountain6",
+    "height": 4444,
+    "note": "hard!"
+  },
+  {
+    "number": 7,
+    "name": "angular mountain6",
+    "height": 4444,
+    "note": "hard!"
+  },
+  {
+    "number": 8,
+    "name": "angular mountain6",
+    "height": 4444,
+    "note": "hard!"
+  },
+  {
+    "number": 8,
+    "name": "angular mountain6",
+    "height": 4444,
+    "note": "hard!"
+  },
+  {
+    "number": 8,
+    "name": "angular mountain6",
+    "height": 4444,
+    "note": "hard!"
+  },
+  {
+    "number": 8,
+    "name": "angular mountain6",
+    "height": 4444,
+    "note": "hard!"
+  }
+]

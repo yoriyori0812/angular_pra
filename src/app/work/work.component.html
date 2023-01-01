@@ -1,0 +1,18 @@
+<mat-sidenav-container id="wrapper">
+    <mat-sidenav [opened]="open" mode="over" id="sidemenu" color="primary">
+      <mat-list>
+        <mat-list-item *ngFor="let page of pages">
+          <mat-icon>{{ page.icon }}</mat-icon>
+          <a [routerLink]="page.link" (click)="changeSlide()" >
+            {{ page.name }}
+          </a>
+        </mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content position="end" id="main">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<mat-toolbar color="primary">
+  連絡先: XX-XXXX-XXXX
+</mat-toolbar>

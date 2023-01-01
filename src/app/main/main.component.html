@@ -1,0 +1,26 @@
+<div class="inputsection">
+<section class="loginsection">
+ログインID<br>
+<mat-form-field hintLabel="英数文字/8~10文字" appearance="fill">
+    <mat-label>ログインIDを入力してください。</mat-label>
+    <input matInput #input maxlength="10" placeholder="例)233@FdRTyyu" [formControl]="loginid"
+    [(ngModel)]="user.id" required>
+    <mat-hint align="end">{{input.value?.length || 0}}</mat-hint>
+    <mat-error *ngIf="loginid.invalid">{{getErrorMessage("loginid")}}</mat-error>
+</mat-form-field>
+</section>
+<section class="passwordsection">
+パスワード<br>
+<mat-form-field hintLabel="最大12英数文字" appearance="fill">
+    <mat-label>パスワードを入力してください。</mat-label>
+    <input matInput #input maxlength="12" placeholder="例)456@TG789PPP" required>
+    <mat-hint align="end">{{input.value?.length || 0}}</mat-hint>
+</mat-form-field><br>
+<button mat-raised-button class="loginbutton" color="primary" (click)="onClicked()">ログイン</button>
+</section>
+<section class="resultsection">
+<br>結果<br>
+下記に結果を表示する
+    <input id="result" [(ngModel)]="user.address" />
+</section>
+</div>
